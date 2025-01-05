@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fs"
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fs"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // WindowsNode emulates Windows FS semantics, which forbids deleting open files.

@@ -3,7 +3,7 @@ package fs
 import (
 	"syscall"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // see rawBridge.setAttr

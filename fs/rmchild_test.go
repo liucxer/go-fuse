@@ -10,7 +10,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 func TestRmChildParallel(t *testing.T) {

@@ -16,9 +16,9 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/internal/fallocate"
-	"github.com/liucxer/go-fuse/v2/internal/xattr"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/internal/fallocate"
+	"github.com/liucxer/go-fuse/internal/xattr"
 	"golang.org/x/sys/unix"
 )
 

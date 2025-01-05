@@ -7,7 +7,7 @@ package pathfs
 import (
 	"os"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 func CopyFile(srcFs, destFs FileSystem, srcFile, destFile string, context *fuse.Context) fuse.Status {

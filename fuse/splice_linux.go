@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/liucxer/go-fuse/v2/splice"
+	"github.com/liucxer/go-fuse/splice"
 )
 
 func (s *Server) setSplice() {

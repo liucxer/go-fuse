@@ -6,7 +6,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/internal/testutil"
 	"github.com/moby/sys/mountinfo"
 )
 

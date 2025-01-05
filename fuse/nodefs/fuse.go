@@ -5,7 +5,7 @@
 package nodefs
 
 import (
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // Mount mounts a filesystem with the given root node on the given directory.

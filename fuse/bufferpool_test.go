@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/internal/testutil"
 )
 
 func TestBufferPool(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/liucxer/go-fuse/v2
+module github.com/liucxer/go-fuse
 
 require (
 	github.com/kylelemons/godebug v0.0.0-20170820004349-d65d576e9348

@@ -16,7 +16,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 type maxWriteTestRoot struct {

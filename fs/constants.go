@@ -7,8 +7,8 @@ package fs
 import (
 	"syscall"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/internal/xattr"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/internal/xattr"
 )
 
 // OK is the Errno return value to indicate absense of errors.

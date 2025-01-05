@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/internal/renameat"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/internal/renameat"
 	"golang.org/x/sys/unix"
 )
 

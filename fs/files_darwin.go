@@ -9,8 +9,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/internal/utimens"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/internal/utimens"
 )
 
 func setBlocks(out *fuse.Attr) {

@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/fuse/nodefs"
-	"github.com/liucxer/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/fuse/nodefs"
+	"github.com/liucxer/go-fuse/internal/testutil"
 )
 
 // this file is linux-only, since it uses syscall.Getxattr.

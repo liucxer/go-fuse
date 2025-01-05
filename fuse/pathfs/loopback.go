@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/fuse/nodefs"
-	"github.com/liucxer/go-fuse/v2/internal"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/fuse/nodefs"
+	"github.com/liucxer/go-fuse/internal"
 )
 
 type loopbackFileSystem struct {

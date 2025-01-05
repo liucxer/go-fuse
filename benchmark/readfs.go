@@ -9,8 +9,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fs"
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fs"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 const fileSize = 2 << 60

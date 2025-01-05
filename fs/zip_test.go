@@ -16,7 +16,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/fs"
+	"github.com/liucxer/go-fuse/fs"
 )
 
 var testData = map[string]string{

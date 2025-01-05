@@ -7,7 +7,7 @@ package nodefs
 import (
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // NewDefaultNode returns an implementation of Node that returns

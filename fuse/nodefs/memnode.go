@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // NewMemNodeFSRoot creates an in-memory node-based filesystem. Files

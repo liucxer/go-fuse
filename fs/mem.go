@@ -9,7 +9,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // MemRegularFile is a filesystem node that holds a read-only data

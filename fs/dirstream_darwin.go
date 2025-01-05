@@ -9,7 +9,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 func NewLoopbackDirStream(nm string) (DirStream, syscall.Errno) {

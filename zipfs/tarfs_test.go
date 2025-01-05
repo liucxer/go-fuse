@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fs"
-	"github.com/liucxer/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/fs"
+	"github.com/liucxer/go-fuse/internal/testutil"
 )
 
 var tarContents = map[string]string{

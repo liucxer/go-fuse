@@ -9,8 +9,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/liucxer/go-fuse/v2/fs"
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fs"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // ExampleMount shows how to create a loopback file system, and

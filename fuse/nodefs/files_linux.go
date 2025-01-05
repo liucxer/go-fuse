@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 func (f *loopbackFile) Allocate(off uint64, sz uint64, mode uint32) fuse.Status {

@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/fuse/nodefs"
-	"github.com/liucxer/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/fuse/nodefs"
+	"github.com/liucxer/go-fuse/internal/testutil"
 )
 
 type truncatableFile struct {

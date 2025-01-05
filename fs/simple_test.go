@@ -22,9 +22,9 @@ import (
 	"time"
 
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/liucxer/go-fuse/v2/fuse"
-	"github.com/liucxer/go-fuse/v2/internal/testutil"
-	"github.com/liucxer/go-fuse/v2/posixtest"
+	"github.com/liucxer/go-fuse/fuse"
+	"github.com/liucxer/go-fuse/internal/testutil"
+	"github.com/liucxer/go-fuse/posixtest"
 	"golang.org/x/sys/unix"
 )
 

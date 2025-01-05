@@ -1,12 +1,12 @@
 # Go-FUSE
 
 [![CI](https://github.com/liucxer/go-fuse/actions/workflows/ci.yml/badge.svg)](https://github.com/liucxer/go-fuse/actions/workflows/ci.yml)
-[![GoDoc](https://godoc.org/github.com/liucxer/go-fuse/v2/fs?status.svg)](https://godoc.org/github.com/liucxer/go-fuse/v2/fs)
+[![GoDoc](https://godoc.org/github.com/liucxer/go-fuse/fs?status.svg)](https://godoc.org/github.com/liucxer/go-fuse/fs)
 
 Go native bindings for the FUSE kernel module.
 
 Use
-[github.com/liucxer/go-fuse/v2/fs](https://godoc.org/github.com/liucxer/go-fuse/v2/fs)
+[github.com/liucxer/go-fuse/fs](https://godoc.org/github.com/liucxer/go-fuse/fs)
 library.  It follows the wire protocol closely, but provides
 convenient abstractions for building both node and path based file
 systems

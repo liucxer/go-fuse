@@ -15,7 +15,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/fuse"
 )
 
 // TestBridgeReaddirPlusVirtualEntries looks at "." and ".." in the ReadDirPlus
