@@ -15,9 +15,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/hanwen/go-fuse/v2/fuse"
-	"github.com/hanwen/go-fuse/v2/fuse/nodefs"
-	"github.com/hanwen/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/v2/fuse/nodefs"
+	"github.com/liucxer/go-fuse/v2/internal/testutil"
 )
 
 // tRoot implements simple root node which Lookups children in predefined .nodes.
@@ -97,7 +97,7 @@ func TestNodeParallelLookup(t *testing.T) {
 
 	// spawn 2 threads to access the files in parallel
 	// this will deadlock if nodefs does not allow simultaneous Lookups to be handled.
-	// see https://github.com/hanwen/go-fuse/commit/d0fca860 for context.
+	// see https://github.com/liucxer/go-fuse/commit/d0fca860 for context.
 	ctx0, cancel := context.WithCancel(context.Background())
 	defer cancel()
 	wg, ctx := errgroup.WithContext(ctx0)

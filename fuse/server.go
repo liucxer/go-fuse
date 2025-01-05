@@ -414,7 +414,7 @@ func (ms *Server) recordStats(req *request) {
 func (ms *Server) Serve() {
 	if ms.serving {
 		// Calling Serve() multiple times leads to a panic on unmount and fun
-		// debugging sessions ( https://github.com/hanwen/go-fuse/issues/512 ).
+		// debugging sessions ( https://github.com/liucxer/go-fuse/issues/512 ).
 		// Catch it early.
 		log.Panic("Serve() must only be called once, you have called it a second time")
 	}

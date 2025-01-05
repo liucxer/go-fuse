@@ -8,7 +8,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/hanwen/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/v2/fuse"
 )
 
 type connectorDir struct {
@@ -40,7 +40,7 @@ func (d *connectorDir) ReadDir(cancel <-chan struct{}, input *fuse.ReadIn, out *
 	}
 
 	if input.Offset > uint64(len(d.stream)) {
-		// See https://github.com/hanwen/go-fuse/issues/297
+		// See https://github.com/liucxer/go-fuse/issues/297
 		// This can happen for FUSE exported over NFS.  This
 		// seems incorrect, (maybe the kernel is using offsets
 		// from other opendir/readdir calls), it is harmless to reinforce that

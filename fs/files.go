@@ -9,8 +9,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/hanwen/go-fuse/v2/fuse"
-	"github.com/hanwen/go-fuse/v2/internal/fallocate"
+	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/v2/internal/fallocate"
 	"golang.org/x/sys/unix"
 )
 

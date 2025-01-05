@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanwen/go-fuse/v2/fuse"
-	"github.com/hanwen/go-fuse/v2/internal/testutil"
-	"github.com/hanwen/go-fuse/v2/posixtest"
 	"github.com/kylelemons/godebug/pretty"
+	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/v2/internal/testutil"
+	"github.com/liucxer/go-fuse/v2/posixtest"
 	"golang.org/x/sys/unix"
 )
 
@@ -658,7 +658,7 @@ func TestStaleHardlinks(t *testing.T) {
 	tc := newTestCase(t, &testOptions{attrCache: false, entryCache: false})
 
 	// gvfsd-trash sets an inotify watch on mntDir and stat()s every file that is
-	// created, racing with the test logic ( https://github.com/hanwen/go-fuse/issues/478 ).
+	// created, racing with the test logic ( https://github.com/liucxer/go-fuse/issues/478 ).
 	// Use a subdir to prevent that.
 	if err := os.Mkdir(tc.mntDir+"/x", 0755); err != nil {
 		t.Fatal(err)

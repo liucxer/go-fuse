@@ -16,7 +16,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/hanwen/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/v2/fuse"
 )
 
 // Tests should set to true.
@@ -40,7 +40,7 @@ type FileSystemConnector struct {
 	// This lock prevents Lookup() and Forget() from running concurrently.
 	// Locking at this level is a big hammer, but makes sure we don't return
 	// forgotten nodes to the kernel. Problems solved by this lock:
-	// https://github.com/hanwen/go-fuse/issues/168
+	// https://github.com/liucxer/go-fuse/issues/168
 	// https://github.com/rfjakob/gocryptfs/issues/322
 	//
 	// The lock is shared: several concurrent Lookups are allowed to be

@@ -16,9 +16,9 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/hanwen/go-fuse/v2/fuse"
-	"github.com/hanwen/go-fuse/v2/internal/fallocate"
-	"github.com/hanwen/go-fuse/v2/internal/xattr"
+	"github.com/liucxer/go-fuse/v2/fuse"
+	"github.com/liucxer/go-fuse/v2/internal/fallocate"
+	"github.com/liucxer/go-fuse/v2/internal/xattr"
 	"golang.org/x/sys/unix"
 )
 
@@ -481,7 +481,7 @@ func RenameOpenDir(t *testing.T, mnt string) {
 
 	var st2 syscall.Stat_t
 	if err := syscall.Fstat(fd, &st2); err != nil {
-		t.Skipf("Fstat failed: %v. Known limitation - see https://github.com/hanwen/go-fuse/issues/55", err)
+		t.Skipf("Fstat failed: %v. Known limitation - see https://github.com/liucxer/go-fuse/issues/55", err)
 	}
 	if st2.Mode&syscall.S_IFMT != syscall.S_IFDIR {
 		t.Errorf("got mode %o, want %o", st2.Mode, syscall.S_IFDIR)
@@ -490,7 +490,7 @@ func RenameOpenDir(t *testing.T, mnt string) {
 		t.Errorf("got ino %d, want %d", st2.Ino, st1.Ino)
 	}
 	if st2.Mode&0777 != st1.Mode&0777 {
-		t.Skipf("got permissions %#o, want %#o. Known limitation - see https://github.com/hanwen/go-fuse/issues/55",
+		t.Skipf("got permissions %#o, want %#o. Known limitation - see https://github.com/liucxer/go-fuse/issues/55",
 			st2.Mode&0777, st1.Mode&0777)
 	}
 }

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// This is main program driver for github.com/hanwen/go-fuse/zipfs, a
+// This is main program driver for github.com/liucxer/go-fuse/zipfs, a
 // filesystem for mounting read-only archives.
 package main
 
@@ -18,8 +18,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanwen/go-fuse/v2/fs"
-	"github.com/hanwen/go-fuse/v2/zipfs"
+	"github.com/liucxer/go-fuse/v2/fs"
+	"github.com/liucxer/go-fuse/v2/zipfs"
 )
 
 func main() {

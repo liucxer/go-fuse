@@ -1,12 +1,12 @@
 # Go-FUSE
 
-[![CI](https://github.com/hanwen/go-fuse/actions/workflows/ci.yml/badge.svg)](https://github.com/hanwen/go-fuse/actions/workflows/ci.yml)
-[![GoDoc](https://godoc.org/github.com/hanwen/go-fuse/v2/fs?status.svg)](https://godoc.org/github.com/hanwen/go-fuse/v2/fs)
+[![CI](https://github.com/liucxer/go-fuse/actions/workflows/ci.yml/badge.svg)](https://github.com/liucxer/go-fuse/actions/workflows/ci.yml)
+[![GoDoc](https://godoc.org/github.com/liucxer/go-fuse/v2/fs?status.svg)](https://godoc.org/github.com/liucxer/go-fuse/v2/fs)
 
 Go native bindings for the FUSE kernel module.
 
 Use
-[github.com/hanwen/go-fuse/v2/fs](https://godoc.org/github.com/hanwen/go-fuse/v2/fs)
+[github.com/liucxer/go-fuse/v2/fs](https://godoc.org/github.com/liucxer/go-fuse/v2/fs)
 library.  It follows the wire protocol closely, but provides
 convenient abstractions for building both node and path based file
 systems
@@ -98,7 +98,7 @@ patches to make Go-FUSE work on Mac.
 
 ## Bugs
 
-Report them through https://github.com/hanwen/go-fuse/issues. Please
+Report them through https://github.com/liucxer/go-fuse/issues. Please
 include a debug trace (set `fuse.MountOptions.Debug` to `true`).
 
 ## License
