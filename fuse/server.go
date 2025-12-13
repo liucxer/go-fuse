@@ -403,7 +403,7 @@ func (ms *Server) readRequest() (req *requestAlloc, code Status) {
 		ms.readPool.Put(destIface)
 	}
 	ms.reqReaders--
-	if !ms.singleReader && ms.reqReaders <= 0 && !needsBackPressure {
+	if !ms.singleReader && ms.reqReaders <= 8 && !needsBackPressure {
 		ms.loops.Add(1)
 		go ms.loop()
 	}
