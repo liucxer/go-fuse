@@ -392,7 +392,7 @@ func (ms *Server) readRequest() (req *requestAlloc, code Status) {
 		log.Printf("Short read for input header: %v", req.inputBuf)
 		return nil, EINVAL
 	}
-	opCode := ((*InHeader)(unsafe.Pointer(&req.inputBuf[0]))).Opcode
+	//opCode := ((*InHeader)(unsafe.Pointer(&req.inputBuf[0]))).Opcode
 	/* These messages don't expect reply, so they cost nothing for
 	   the kernel to send. Make sure we're not overwhelmed by not
 	   spawning a new reader.
