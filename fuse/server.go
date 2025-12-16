@@ -564,6 +564,7 @@ exit:
 			break exit
 		}
 
+		ms.singleReader = true
 		if ms.singleReader {
 			go ms.handleRequest(req)
 		} else {
