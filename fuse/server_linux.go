@@ -8,7 +8,7 @@ import (
 	"syscall"
 )
 
-const useSingleReader = true
+const useSingleReader = false
 
 func (ms *Server) write(req *request) Status {
 	if req.outPayloadSize() == 0 {
