@@ -397,7 +397,6 @@ func (ms *Server) readRequest() (req *requestAlloc, code Status) {
 	   the kernel to send. Make sure we're not overwhelmed by not
 	   spawning a new reader.
 	*/
-	needsBackPressure := (opCode == _OP_FORGET || opCode == _OP_BATCH_FORGET)
 
 	if !gobbled {
 		ms.readPool.Put(destIface)
